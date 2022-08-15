@@ -49,4 +49,12 @@ body{
     color: #FFFFFF;
     background: #2F303A ;
 }
+.button{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
+/* Переваги */
+.section-title{
+    color: var(--title-text-color);
 
+}
