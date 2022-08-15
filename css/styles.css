@@ -1,0 +1,51 @@
+:root{
+    --primary-text-color:#757575;
+    --title-text-color: #212121;
+    --accent-color:#2196F3;
+    --background-color: #FFFFFF;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+    .list{
+    list-style: none;
+    }
+
+/* 
+#EEEEEE - колір background в картинок в портфоліо
+#000000 - колір логотипу
+#F5F4FA вторинний background
+#FFFFFF60% колір в футер: тел і милo
+#2F303A - колір background h1 i футер
+#ECECEC - колір background header
+*/
+
+.logo{
+    color:#000000;
+}
+.logo-web{
+    color: #2196F3;
+}
+/* site-nav */
+.site-nav .link{
+    color: var(--title-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+/* contacts-nav */
+.contacts-nav .link{
+    color: var(--primary-text-color);
+}
+.contacts-nav .link:hover, 
+.contacts-nav .link:focus{
+    color: var(--accent-color);
+}
+/* Замовити послугу */
+.service-title{
+    color: #FFFFFF;
+    background: #2F303A ;
+}
