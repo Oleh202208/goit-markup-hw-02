@@ -30,8 +30,7 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;;
+    line-height: 1.2;
     text-decoration: none;
 }
 .logo-web{
@@ -40,8 +39,7 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;;
+    line-height: 1.2;
 }
 /* site-nav */
 .site-nav .link{
@@ -129,7 +127,8 @@ text-align: center;
 /* Footer */
 
 .logo-studio{
-    color: var(--background-color);
+color: var(--background-color);
+
 }
 .footer-adress{
 color: var(--background-color);
@@ -144,4 +143,22 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
+}
+
+/* Портфоліо */
+
+.button-works{
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+.button-works:hover,
+.button-works:focus{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+}
+.title-works{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+color: var(--title-text-color)
 }
