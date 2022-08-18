@@ -5,29 +5,36 @@
     --background-color: #FFFFFF;
     --background-color-second: #F5F4FA;
     --background-color-futer: #2F303A;
-    --background-color-header: #ECECEC;
+    --color-logo: #000000;
 
 }
 body{
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 
 }
 
     .list{
     list-style: none;
     }
+    .linka{
+        text-decoration: none;
+    }
 
 /* 
 #EEEEEE - колір background в картинок в портфоліо
-#000000 - колір логотипу
-#F5F4FA вторинний background
-#FFFFFF60% колір в футер: тел і милo
-#2F303A - колір background h1 i футер
-#ECECEC - колір background header
+#FFFFFF60% колір text в футер: тел і милo
+#ECECEC - колір background header в середині
 */
 
+/* Header */
+
+.header{
+    background-color: var(--background-color);
+}
 .logo{
     color:#000000;
     font-family: 'Raleway';
@@ -46,6 +53,7 @@ body{
     line-height: 1.2;
 }
 /* site-nav */
+
 .site-nav .link{
 color: var(--title-text-color);
 font-weight: 500;
@@ -54,6 +62,10 @@ line-height: 1.2;
 text-decoration: none;
 
 }
+.current{
+color: var(--accent-color);
+}
+
 .site-nav .link:hover, 
 .site-nav .link:focus{
     color: var(--accent-color);
@@ -70,6 +82,7 @@ text-decoration: none;
 .contacts-nav .link:focus{
     color: var(--accent-color);
 }
+
 /* Замовити послугу Hero */
 .service-title{
     color: #FFFFFF;
@@ -86,20 +99,46 @@ text-transform: uppercase;
 .hero{
     background-color: #2F303A ;
 }
+
 /* button */
 .button{
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    font-weight: 700;
+color: var(--background-color);
+background-color: var(--accent-color);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
 font-size: 16px;
-line-height: 1.9;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
 
 }
+
 /* Переваги, advances*/
 
-.section-title{
-    color: var(--title-text-color);
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+.section-title-item{color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+}
+
 .section-title-advances-text{
     font-weight: 400;
     font-size: 14px;
@@ -108,10 +147,20 @@ line-height: 1.9;
 
 /* Чим займаємося */
 
-
-
+.section-title{
+color:var(--title-text-color);
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+}
 
 /* Команда */
+
+.team{
+    background-color:var(--background-color-second);
+}
 .section-title-name{
     color: var(--title-text-color);
     font-weight: 500;
@@ -139,6 +188,7 @@ color: var(--background-color);
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
+font-style: normal;
 }
 .footer-contacts{
 color: rgba(255, 255, 255, 0.6);
@@ -149,11 +199,28 @@ font-size: 14px;
 line-height: 1.7;
 }
 
+.footer-adress:hover,
+.footer-adress:focus{
+color: var(--accent-color);
+}
+.footer-contacts:hover,
+.footer-contacts:focus{
+color: var(--accent-color);
+}
+
 /* Портфоліо */
 
 .button-works{
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
+color: var(--title-text-color);
+background-color: #F5F4FA;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+
 }
 .button-works:hover,
 .button-works:focus{
@@ -166,3 +233,10 @@ font-size: 18px;
 line-height: 2;
 color: var(--title-text-color)
 }
+.title-works-text{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+}
+
