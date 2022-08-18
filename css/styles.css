@@ -3,6 +3,10 @@
     --title-text-color: #212121;
     --accent-color:#2196F3;
     --background-color: #FFFFFF;
+    --background-color-second: #F5F4FA;
+    --background-color-futer: #2F303A;
+    --background-color-header: #ECECEC;
+
 }
 body{
     background-color: var(--background-color);
