@@ -63,14 +63,16 @@ text-decoration: none;
 
 }
 
-.current{
-color: var(--accent-color);
-}
 
 .site-nav .link:hover, 
 .site-nav .link:focus{
     color: var(--accent-color);
 }
+
+.current{
+color: var(--accent-color);
+}
+
 /* contacts-nav */
 .contacts-nav .link{
     color: var(--primary-text-color);
@@ -84,15 +86,13 @@ text-decoration: none;
     color: var(--accent-color);
 }
 
+
 /* Замовити послугу Hero */
 .service-title{
-    color: #FFFFFF;
-    background: #2F303A;
-    font-family: 'Roboto';
-font-style: normal;
+color: #FFFFFF;
 font-weight: 900;
 font-size: 44px;
-line-height: 60px;
+line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -106,10 +106,9 @@ text-transform: uppercase;
 color: var(--background-color);
 background-color: var(--accent-color);
 font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.9;
 display: flex;
 align-items: center;
 text-align: center;
@@ -218,9 +217,10 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 26px;
+line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
+cursor: pointer;
 
 }
 .button-works:hover,
@@ -235,9 +235,7 @@ line-height: 2;
 color: var(--title-text-color)
 }
 .title-works-text{
-font-style: normal;
-font-weight: 400;
 font-size: 16px;
-line-height: 30px;
+line-height: 1.9;
 }
 
