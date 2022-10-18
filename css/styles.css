@@ -239,3 +239,780 @@ font-size: 16px;
 line-height: 1.9;
 }
 
+
+
+/* ================team projekt modal */
+
+
+
+
+.modal{
+ 
+    left: 50%;
+    top: 50%;
+  
+    width: 280px;
+    height: 990px;
+  
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  
+    background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  // @media screen and (min-width: 480px){
+  //   width: 450px;
+  // }
+  
+  @media screen and (min-width: 768px){
+    width: 568px;
+    height: 995px;
+  }
+  }
+  // --========================
+  
+  
+  
+  .ice__title{
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    
+    align-items: center;
+    text-align: center;
+    
+    color: #131313;
+    @media screen and (min-width: 768px){
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 0;
+    }
+  }
+  
+  .ice__image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    @extend %centred;
+    top: 0px;
+    margin-bottom: 25px;
+    @media screen and(min-width: 768px){
+      // margin-bottom: -30px;
+    }
+  
+    background: linear-gradient(
+      0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  border-radius: 100.166px;
+  
+  &::before{
+  @include pseudo(200px,200px);
+  background-image: url(../images/products/modal-min.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 21px;
+  }
+  }
+  
+  .ice__content{
+    display: flex;
+  }
+  .ice__text{
+    position: relative;
+    display: block;
+  
+    @extend %centred;
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+  
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  text-align: center;
+  
+  @media screen and(min-width: 768px){
+    width: 65px;
+    height: 90px;
+    font-size: 12px;
+  line-height: 15px;
+  }
+  
+  
+    // top: 0px;
+    // margin-bottom: 25px;
+  
+  }
+  
+  
+  .ice__text--number{
+    @extend %centred;
+  
+    position: absolute;
+    top: 0%;
+    right: 3px;
+    display: block;
+  width: 43px;
+  height: 43px;
+    background: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and(min-width: 768px){
+     
+      width: 53px;
+      height: 53px;
+      top: 0%;
+      right: 3px;
+    }
+    
+  }
+  
+  
+  .ice__text--write{
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+  display: block;
+  @media screen and(min-width: 768px){
+    bottom: 11px;
+    right: 15px;
+  }
+  }
+  .ice__text--protein{
+    display: none;
+    @media screen and(min-width: 768px){
+      display: block;
+  
+    position: absolute;
+    bottom: 11px;
+    right: 1px;
+    }
+  }
+  .ice__text--prote{
+    right: 5px;
+    @media screen and(min-width: 768px){
+      display: none;
+    }
+  }
+  
+  
+  
+  .ingredients__text{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  
+  color: #131313;
+  
+  }
+  
+  .ingredients__list{
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  
+  }
+  
+  .ingredients__item{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  // =====Form======
+  
+  .register-form{
+  
+    display: block;
+  
+  }
+  .register-form__field{
+    display: block;
+  
+  }
+  .register-form__label{
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .register-form__input{
+    margin-bottom: 10px;
+    width: 240px;
+    height: 42px;
+    background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  
+  @media screen and (min-width: 768px){
+    width: 368px;
+  }
+  
+  }
+  
+  // .register-form__input:focus,
+  // .register-form__input:hover{
+  //   border-color: #2196F3;
+  // }
+  .register-form__message{
+    display: block;
+    margin-bottom: 8px;
+  
+  }
+  .register-form__textarea{
+    margin-bottom: 32px;
+    width: 240px;
+    height: 84px;
+    background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  @media screen and (min-width: 768px){
+    width: 368px;
+  }
+  }
+  
+  
+
+  /* ================team projekt modal html */
+
+
+  <!-- Модальне вікно, кнопка закриття і кнопка відправки для модалки -->
+<div class="modal" data-modal="2">
+  <button
+    class="modal__btn js-modal-close"
+    type="button"
+    aria-label="close form"
+  >
+    <svg class="modal__icon">
+      <use href="./images/symbol-defs.svg#close"></use>
+    </svg>
+  </button>
+
+  <!-- Писати начинку модалки після цієї строки -->
+
+  <div class="ice">
+    <h3 class="ice__title">Chololate icecream</h3>
+    <div class="ice__image"></div>
+    <div class="ice__content">
+      <p class="ice__text">
+        <span class="ice__text--number">320</span>
+        <span class="ice__text--write">kcal</span>
+      </p>
+      <p class="ice__text">
+        <span class="ice__text--number">4g</span>
+        <span class="ice__text--write ice__text--prote">Prote...</span
+        ><span class="ice__text--protein">Protein...</span>
+      </p>
+      <p class="ice__text">
+        <span class="ice__text--number">8,2g</span>
+        <span class="ice__text--write">Fats</span>
+      </p>
+      <p class="ice__text">
+        <span class="ice__text--number">40,4g</span>
+        <span class="ice__text--write">Carbs</span>
+      </p>
+    </div>
+  </div>
+  <p class="ingredients__text">Ingredients</p>
+  <ul class="ingredients__list">
+    <li class="ingredients__item">
+      <span class="ingredients__item--left">Milk</span>
+      <span class="ingredients__item--right">100ml</span>
+    </li>
+    <li class="ingredients__item">
+      <span class="ingredients__item--left">Belgian chocolate</span
+      ><span class="ingredients__item--right">20g</span>
+    </li>
+    <li class="ingredients__item">
+      <span class="ingredients__item--left">Cream</span>
+      <span class="ingredients__item--right">150 ml</span>
+    </li>
+    <li class="ingredients__item">
+      <span class="ingredients__item--left">Cocoa powder</span>
+      <span class="ingredients__item--right">30g</span>
+    </li>
+    <li class="ingredients__item">
+      <span class="ingredients__item--left">Sugar</span>
+      <span class="ingredients__item--right">40g</span>
+    </li>
+    <li class="ingredients__item">
+      <span class="ingredients__item--left">Vanilla sugar</span>
+      <span class="ingredients__item--right">10g</span>
+    </li>
+  </ul>
+  <form class="register-form" name="register form" autocomplete="on">
+    <label class="register-form__field">
+      <span class="register-form__label">Name</span>
+      <input
+        class="register-form__input"
+        type="text"
+        name=""
+        required
+        placeholder="John Dou"
+      />
+    </label>
+
+    <label class="register-form__field">
+      <span class="register-form__label">Phone</span>
+      <input
+        class="register-form__input"
+        type="tel"
+        name=""
+        required
+        placeholder="+38 055 555 55 55"
+      />
+    </label>
+
+    <label class="register-form__field">
+      <span class="register-form__message">Comment</span>
+      <textarea
+        class="register-form__textarea"
+        name=""
+        rows="5"
+        placeholder="Comment"
+      ></textarea>
+    </label>
+
+    <!-- Закінчення начинки модалки -->
+    <button class="submit__btn" type="submit">Submit</button>
+  </form>
+</div>
+
+
+  /* ================team projekt html */
+
+
+  <section class="products">
+  <div class="products__container">
+    <div class="products__title--table">
+      <p class="products__lable">100% natural</p>
+      <h2 class="products__title">products</h2>
+    </div>
+
+    <ul class="products__list">
+      <div class="products__list--cream">
+        <div class="products__title--mobile">
+          <p class="products__lable">100% natural</p>
+          <h2 class="products__title">products</h2>
+        </div>
+        <li class="products__item products__item--cream">
+          <div class="products__item--green"></div>
+          <h3 class="products__name">ice cream</h3>
+          <p class="products__text products__text--cream">
+            Soft ice cream with a delicate taste. Made with milk, cream, sugar
+            and natural stabilizer
+          </p>
+          <!-- Кнопка виклику модалки для першого продукту -->
+          <button
+            class="product__btn product__btn--cream js-open-modal"
+            type="button"
+            data-modal="2"
+          >
+            <svg class="products__icon">
+              <use href="./images/symbol-defs.svg#arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </div>
+      <div class="products__list--cream">
+        <li class="products__item products__item--coffee">
+          <div class="products__item--yellow"></div>
+          <h3 class="products__name">ice coffee</h3>
+          <p class="products__text products__text--coffee">
+            Fragrant invigorating drink created from 100% natural ingredients
+            without the use of preservatives and flavor enhancers
+          </p>
+          <!-- Кнопка виклику модалки для другого продукту -->
+          <button
+            class="product__btn product__btn--coffee js-open-modal"
+            type="button"
+            data-modal="2"
+          >
+            <svg class="products__icon">
+              <use href="./images/symbol-defs.svg#arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </div>
+      <div class="products__milkshakes">
+        <li class="products__item products__item--milkshakes">
+          <div class="products__item--brown"></div>
+          <h3 class="products__name">milkshakes</h3>
+          <p class="products__text products__text--milkshakes">
+            Sweet drinks based on milk and ice cream, supplemented with syrups,
+            fruits, berries and other sweets of your choice
+          </p>
+          <!-- Кнопка виклику модалки для третього продукту -->
+          <button
+            class="product__btn product__btn--milkshakes js-open-modal"
+            type="button"
+            data-modal="2"
+          >
+            <svg class="products__icon">
+              <use href="./images/symbol-defs.svg#arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </div>
+    </ul>
+  </div>
+</section>
+
+
+ /* ================team projekt scss*/
+
+ .products{
+  
+    background-color: white;
+    // background-image: url(../images/background/mobile/mobile-bg-1-min.png);
+  
+    background-image: url('../images/background/mobile/mobile-bg-1-min.png'),
+    url('../images/background/mobile/mobile-bg-2-min.png'),
+    url('../images/background/mobile/mobile-bg-3-min.png');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/background/mobile/mobile-bg-1@2x-min.png'),
+      url('../images/background/mobile/mobile-bg-2@2x-min.png'),
+      url('../images/background/mobile/mobile-bg-3@2x-min.png');
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url('../images/background/mobile/mobile-bg-1@3x-min.png'),
+      url('../images/background/mobile/mobile-bg-2@3x-min.png'),
+      url('../images/background/mobile/mobile-bg-3@3x-min.png');
+  }
+  background-position: top 0 left 0, top 700px left 0, top 1400px left 0;
+  background-size: 480px 700px;
+  background-repeat: no-repeat;
+  
+    // background-image:
+    // url(../images/background/mobile/mobile-bg-1-min.png);
+    // @media (min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi), (min-resolution: 2dppx){
+    //   background-image: 
+    //   url(../images/background/mobile/mobile-bg-1@2x-min.png);
+    // }
+  
+    @media screen and (min-width: 480px){
+      background-image:
+    url(../images/background/tablet/tablet-bg-min.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: 
+      url(../images/background/tablet/tablet-bg@2x-min.png);
+    }
+    background-size: 1199px 852px;
+    background-attachment: fixed;
+    }
+  
+    @media screen and (min-width: 1200px){
+      background-image:
+    url(../images/background/desktop/desktop-bg-min.png);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), (min-resolution: 2dppx){
+      background-image: 
+      url(../images/background/desktop/desktop-bg@2x-min.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image:
+    url('../images/background/desktop/desktop-bg@3x-min.png');
+  }
+  background-size: 1600px 1050px;
+  background-attachment: scroll;
+    }
+  
+  }
+  .products__container{
+    @extend %container;
+  }
+  
+  .products__list--cream{
+    margin-bottom: 131px;
+  }
+  
+  .products__title--table{
+    display: none;
+    @media screen and(min-width: 768px){
+      display: block;
+      margin-bottom: 131px;
+    }
+  }
+  
+  .products__title--mobile{
+  margin-bottom: 131px;
+  @media screen and(min-width: 768px){
+    display: none;
+  }
+  
+  }
+  .products__lable{
+  
+    margin-bottom: 12px;
+    padding-top: 60px;
+    @extend %lable;
+    color: var(--text-black);
+    }
+  
+  .products__title{
+    margin-bottom: 40px;
+    @extend %title;
+    color: var(--text-black);
+    }
+  
+  .products__name{
+    margin-top: -50px;
+   margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: var(--text-black);
+  @media screen and(min-width: 768px){
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width: 1200px){
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: -40px;
+  }
+    
+  }
+  
+  
+  .products__text{
+    // @extend %centred;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+  
+    color: var(--text-black);
+    @media screen and(min-width: 1200px){
+      font-size: 16px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+  .products__text--cream{
+    margin-bottom: 135px;
+    @media screen and(min-width: 768px){
+      margin-bottom: 58px;
+    }
+    @media screen and(min-width: 1200px){
+     
+      margin-bottom: 94px;
+    }
+  
+  }
+  .products__text--coffee{
+    margin-bottom: 93px;
+    @media screen and(min-width: 768px){
+      margin-bottom: 9px;
+    }
+    @media screen and(min-width: 1200px){
+      margin-bottom: 68px;
+    }
+  }
+  .products__text--milkshakes{
+    margin-bottom: 93px;
+    @media screen and(min-width: 768px){
+      margin-bottom: 9px;
+    }
+    @media screen and(min-width: 1200px){
+      margin-bottom: 66px;
+    }
+  }
+  
+  .products__list{
+    @media screen and(min-width: 768px){
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    @media screen and(min-width: 1200px){
+  gap: 29px;
+    }
+  }
+  
+  .products__item{
+    @extend %centred;
+  
+  }
+  
+  .products__item--cream{
+  background-color: var(--bg-products-1);
+  width: 280px;
+  height: 528px;
+  
+  border-radius: 24px;
+  @media screen and(min-width: 768px){
+    width: 224px;
+    height: 428px;
+  }
+  @media screen and(min-width: 1200px){
+    width: 370px;
+    height: 535px;
+  }
+  }
+  .products__item--green{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    @extend %centred;
+    top: -70px;
+    // margin-bottom: 20px;
+    @media screen and(min-width: 768px){
+      margin-bottom: -30px;
+    }
+  
+  
+    background: linear-gradient(
+      0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  border-radius: 100.166px;
+  
+  &::before{
+  @include pseudo(200px,200px);
+  background-image: url(../images/products/products-1-min.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 21px;
+  }
+  }
+  .products__item--coffee{
+    background-color: var(--bg-products-2);
+    width: 280px;
+  height: 528px;
+  border-radius: 24px;
+  @media screen and(min-width: 768px){
+    width: 224px;
+    height: 428px;
+  }
+  @media screen and(min-width: 1200px){
+    width: 370px;
+    height: 535px;
+  }
+  }
+  .products__item--yellow{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    @extend %centred;
+    top: -70px;
+    // margin-bottom: 20px;
+    @media screen and(min-width: 768px){
+      margin-bottom: -30px;
+    }
+  
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  border-radius: 100.166px;
+  
+  &::before{
+  @include pseudo(200px,200px);
+  background-image: url(../images/products/products-2-min.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 21px;
+  }
+  }
+  
+  .products__item--milkshakes{
+    padding-bottom: 60px;
+    background-color: var(--bg-products-3);
+    width: 280px;
+  height: 528px;
+  border-radius: 24px;
+  @media screen and(min-width: 768px){
+    width: 224px;
+    height: 428px;
+  }
+  @media screen and(min-width: 1200px){
+    width: 370px;
+    height: 535px;
+  }
+  }
+  .products__item--brown{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    @extend %centred;
+    top: -70px;
+    // margin-bottom: 20px;
+    @media screen and(min-width: 768px){
+      margin-bottom: -30px;
+    }
+  
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  border-radius: 100.166px;
+  
+  &::before{
+  @include pseudo(200px,200px);
+  background-image: url(../images/products/products-3-min.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 21px;
+  }
+  }
+  .products__milkshakes{
+    padding-bottom: 60px;
+  }
+  .product__btn{
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .product__btn .products__icon:hover{
+    width: 50px;
+  }
+  .product__btn .products__icon:focus {
+    border: 3px solid #131313;
+  }
+  
+  // .customers__link:hover,
+  // .customers__link:focus {
+  //   color: var(--accent-color);
+  //   border: 1px solid var(--accent-color);
+  // }
+  
+  
+  .product__btn--cream{
+    background-color: var(--bg-products-1);
+  }
+  .product__btn--coffee{
+    background-color: var(--bg-products-2);
+  }
+  .product__btn--milkshakes{
+    background-color: var(--bg-products-3);
+  }
+  
+  .products__icon{
+    width: 40px;
+    height: 20px;
+    // border: 2px solid #131313;
+  }
